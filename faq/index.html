@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Frequently asked questions about using Finotio.">
+  <meta name="theme-color" content="#10111f">
+  <title>FAQ — Finotio</title>
+  <link rel="icon" href="../assets/finotio-icon.png">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/site.js" defer></script>
+</head>
+<body>
+  <header class="site-header shell">
+    <a class="brand" href="../" aria-label="Finotio home">
+      <img src="../assets/finotio-icon.png" alt="">
+      <span>Finotio</span>
+    </a>
+    <div class="language-picker" aria-label="Language">
+      <button type="button" data-language="en" aria-pressed="true">EN</button>
+      <button type="button" data-language="vi" aria-pressed="false">VI</button>
+    </div>
+  </header>
+
+  <main class="shell">
+    <article data-copy="en">
+      <header class="hero">
+        <p class="eyebrow">Help center</p>
+        <h1 class="legal-title">Frequently Asked Questions</h1>
+        <p class="lede">Ten practical answers for setting up and using Finotio.</p>
+      </header>
+      <section class="faq-list">
+        <details open>
+          <summary>1. How do I import Techcombank notifications automatically?</summary>
+          <p>Open Shortcuts, create an automation triggered by a Techcombank notification, and add Finotio’s <strong>Import Bank Notification</strong> action. Map the notification Title and Content to the matching Finotio fields, turn off confirmation before running, and allow the automation to run while locked.</p>
+        </details>
+        <details>
+          <summary>2. How does Finotio identify the bank when its name is missing?</summary>
+          <p>Finotio saves the account number and money source from recognized transactions. When a later notification omits the bank name, Finotio compares its account number with your saved Accounts and uses the matching money source.</p>
+        </details>
+        <details>
+          <summary>3. Why did a notification not create a transaction?</summary>
+          <p>Confirm that both notification Title and Content are passed to Finotio. Promotional messages beginning with <code>[QC]</code> are intentionally ignored. If the bank changes its wording, paste the complete notification into Add → Paste and review the result.</p>
+        </details>
+        <details>
+          <summary>4. Can I edit an alias or category?</summary>
+          <p>Yes. Open any transaction and change its Transaction alias or Category. When you change a category, Finotio remembers the normalized alias and can reuse that category for similar future transactions.</p>
+        </details>
+        <details>
+          <summary>5. What does the warning icon mean?</summary>
+          <p>The warning means the notification was parsed with low confidence. Review the original notification, alias, and category. The warning disappears after you edit either the alias or category.</p>
+        </details>
+        <details>
+          <summary>6. How do search and filters work?</summary>
+          <p>Search by alias, category, bank, or amount. A numeric query such as <code>10</code> matches amount prefixes such as 10,000 and 100,000, while also matching aliases containing “10”. Use the filter button to narrow results by category or money source.</p>
+        </details>
+        <details>
+          <summary>7. How does Finotio avoid duplicate transactions?</summary>
+          <p>Finotio compares source, direction, amount, time, and transaction description before saving. Similar notifications or receipts recorded close together are treated as duplicates.</p>
+        </details>
+        <details>
+          <summary>8. How do I delete a transaction?</summary>
+          <p>Open Transaction Details, scroll to the bottom, and tap Delete Transaction. You can also swipe a transaction in the full Transactions list.</p>
+        </details>
+        <details>
+          <summary>9. Where is my financial data stored?</summary>
+          <p>Transaction parsing and storage happen locally on your iPhone. Finotio does not require your bank password or OTP. Read the Privacy Policy for the complete details.</p>
+        </details>
+        <details>
+          <summary>10. Which banks are currently supported?</summary>
+          <p>Techcombank is the currently supported bank. More notification formats may be added after they are tested against real, redacted samples.</p>
+        </details>
+      </section>
+    </article>
+
+    <article data-copy="vi" hidden>
+      <header class="hero">
+        <p class="eyebrow">Trung tâm trợ giúp</p>
+        <h1 class="legal-title">Câu hỏi thường gặp</h1>
+        <p class="lede">Mười câu trả lời thiết thực để thiết lập và sử dụng Finotio.</p>
+      </header>
+      <section class="faq-list">
+        <details open>
+          <summary>1. Làm sao tự động nhập thông báo Techcombank?</summary>
+          <p>Mở Phím tắt, tạo một tự động hóa được kích hoạt bởi thông báo Techcombank, rồi thêm tác vụ <strong>Nhập thông báo ngân hàng</strong> của Finotio. Gán Tiêu đề và Nội dung thông báo vào đúng trường của Finotio, tắt xác nhận trước khi chạy và cho phép tự động hóa chạy khi khóa máy.</p>
+        </details>
+        <details>
+          <summary>2. Finotio nhận diện ngân hàng thế nào khi thông báo không có tên ngân hàng?</summary>
+          <p>Finotio lưu số tài khoản và nguồn tiền từ các giao dịch đã nhận diện. Khi thông báo sau không có tên ngân hàng, Finotio đối chiếu số tài khoản với mục Tài khoản đã lưu và dùng nguồn tiền tương ứng.</p>
+        </details>
+        <details>
+          <summary>3. Vì sao một thông báo không tạo ra giao dịch?</summary>
+          <p>Hãy kiểm tra cả Tiêu đề và Nội dung thông báo đều được chuyển sang Finotio. Tin quảng cáo bắt đầu bằng <code>[QC]</code> sẽ bị bỏ qua. Nếu ngân hàng đổi cách viết, hãy dán toàn bộ thông báo vào Thêm → Dán và kiểm tra kết quả.</p>
+        </details>
+        <details>
+          <summary>4. Tôi có thể sửa tên giao dịch hoặc danh mục không?</summary>
+          <p>Có. Mở bất kỳ giao dịch nào rồi sửa Tên giao dịch hoặc Danh mục. Khi bạn đổi danh mục, Finotio ghi nhớ tên đã chuẩn hóa và có thể dùng lại danh mục đó cho giao dịch tương tự trong tương lai.</p>
+        </details>
+        <details>
+          <summary>5. Biểu tượng cảnh báo có ý nghĩa gì?</summary>
+          <p>Cảnh báo cho biết Finotio chưa tự tin về kết quả phân tích thông báo. Hãy kiểm tra thông báo gốc, tên giao dịch và danh mục. Cảnh báo biến mất sau khi bạn sửa tên giao dịch hoặc danh mục.</p>
+        </details>
+        <details>
+          <summary>6. Tìm kiếm và bộ lọc hoạt động thế nào?</summary>
+          <p>Bạn có thể tìm theo tên, danh mục, ngân hàng hoặc số tiền. Từ khóa thuần số như <code>10</code> sẽ khớp tiền tố số tiền như 10.000 và 100.000, đồng thời vẫn khớp tên giao dịch chứa “10”. Nút bộ lọc giúp lọc theo danh mục hoặc nguồn tiền.</p>
+        </details>
+        <details>
+          <summary>7. Finotio tránh giao dịch trùng lặp thế nào?</summary>
+          <p>Trước khi lưu, Finotio so sánh nguồn, chiều giao dịch, số tiền, thời gian và mô tả. Các thông báo hoặc hóa đơn tương tự được ghi gần nhau sẽ được xem là trùng lặp.</p>
+        </details>
+        <details>
+          <summary>8. Làm sao xóa một giao dịch?</summary>
+          <p>Mở Chi tiết giao dịch, cuộn xuống cuối trang rồi nhấn Xóa giao dịch. Bạn cũng có thể vuốt một giao dịch trong danh sách Giao dịch đầy đủ.</p>
+        </details>
+        <details>
+          <summary>9. Dữ liệu tài chính của tôi được lưu ở đâu?</summary>
+          <p>Việc phân tích và lưu giao dịch diễn ra cục bộ trên iPhone. Finotio không yêu cầu mật khẩu ngân hàng hoặc OTP. Hãy đọc Chính sách quyền riêng tư để biết đầy đủ chi tiết.</p>
+        </details>
+        <details>
+          <summary>10. Finotio hiện hỗ trợ ngân hàng nào?</summary>
+          <p>Techcombank là ngân hàng đang được hỗ trợ chính thức. Các định dạng thông báo khác có thể được bổ sung sau khi được kiểm thử với mẫu thật đã ẩn thông tin nhạy cảm.</p>
+        </details>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer shell">
+    <p>© 2026 Finotio</p>
+    <p><a href="../">Home</a> · <a href="../privacy/">Privacy</a> · <a href="../terms/">Terms</a></p>
+  </footer>
+</body>
+</html>
